@@ -73,7 +73,7 @@ def update(frame_number):
         y_ = None
         agents[i].move(environment,i,carry_on,x_,y_)
         matplotlib.pyplot.scatter(agents[i].x,agents[i].y,color='blue')#plots each of the agents paths frame by frame to show the path of each drunks until they get home
-        
+        #print(agents[i].y,agents[i].x) NO NEED TO PRINT this was just to test to make sure the coordinates move up and down or left and right each time
         
 def gen_function(b = [0]):
     #This function sets the number of frames using a variable carry_on which when true iterates adding a frame to the animation, when carry_on becomes false in the agent frame work
