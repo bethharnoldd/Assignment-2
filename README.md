@@ -1,1 +1,8 @@
-# Assignment-2
+# Assignment-2 Planning for drunks Agent Based Modelling
+
+The aim of this assignment is to show the paths of drunks attempting to get home from the pub which will allow for town planning. The project aim is achieved by using agent based modelling. In the town there was 25 drunks that were modelled from the pub to their homes, there house numbers were labelled as 10-250 for each respective drunk from 1-25. The drunks move in random steps and once they reach their respective homes they stop. The script produces a density map of all the drunks paths from the pub to their homes.
+
+The town.pln file was downloaded and ran into the script as environment. The environment was printed as a test to ensure it has been ran in properly and plotted. This displayed a town plan; where the empty space in the town, has the value in the environment as 0, therefore coded in purple; where each of the 25 houses of the drunks were displayed as 20x20 squares had the value of 10-250, which corresponded to the drunk from 1-25 respectively, these values filled the houses with varying colours. The pub had values in the environment of 1, which gave rise to the first challenge of the assignment. As the value in the environment where the pub was located was 1 the plot fills the pub in with a colours extremely close to that of the empty space. Therefore, to find the coordinates of the pub it was useful to create a loop over the environment to find the index where the entry value was equal to 1. This gave the pub corner coordinates as, (),(),(),().
+
+Once the town plan and pub location has been created an established the code from assingment one could be adapted to initiate agents which model the drunks. Rather than allowing the code to intiate agents with random coordinates between 0 and 99 on both the x and y axis, the intial coordinates of all the drunks were restricted to between the outer coordinates of the pub. 
+
